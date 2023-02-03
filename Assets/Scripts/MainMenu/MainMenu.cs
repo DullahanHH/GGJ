@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame(){
-        SceneManager.LoadScene("test-chapter-choice");
+        SceneManager.LoadScene("chapter-choice");
     }
 
     public void QuitGame(){
         Application.Quit();
+    }
+
+    public void BackToMainMenu(){
+        SceneManager.LoadScene("MainMenuScenes");
     }
     
 }
