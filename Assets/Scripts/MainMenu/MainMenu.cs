@@ -18,6 +18,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenuScenes");
     }
 
+    public void reloadScene(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void Chatper1_0(){
         SceneManager.LoadScene("Intro");
     }

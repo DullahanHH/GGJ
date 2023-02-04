@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.05660379, g: 0.0542008, b: 0.0542008, a: 1}
+  m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -368,7 +368,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.65559
+  orthographic size: 4.6872573
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1399,8 +1399,8 @@ MonoBehaviour:
   faceImage: {fileID: 74802643}
   textFile: {fileID: 4900000, guid: 71b2e3febda825540b08ecac2b27496c, type: 3}
   index: 0
-  face01: {fileID: 21300000, guid: 0d8ee47d3baeb0a40983079e06accc90, type: 3}
-  face02: {fileID: 21300000, guid: 572269107fb945947a6502ef9623a02e, type: 3}
+  face01: {fileID: -2061922357, guid: 7b655d4efc041514593636ffe15bf500, type: 3}
+  face02: {fileID: 1410064446, guid: 52355bee263eb794ab3aa0a5e5743d32, type: 3}
   walkSpeed: 4
   Button: {fileID: 1382190812}
 --- !u!1 &1016248845
@@ -4000,8 +4000,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 385601408, guid: 701e354a3391d824d90c7227beea37cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4269,8 +4269,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8679245, g: 0.11053756, b: 0.11053756, a: 1}
+  m_Sprite: {fileID: 1410064446, guid: 52355bee263eb794ab3aa0a5e5743d32, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
