@@ -9,6 +9,7 @@ TagManager:
   - ByteNPC
   - soldier
   - byteMan
+  - smallDoor
   layers:
   - Default
   - TransparentFX

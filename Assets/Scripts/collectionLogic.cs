@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class stoneLogic : MonoBehaviour
+public class collectionLogic : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -22,9 +22,8 @@ public class stoneLogic : MonoBehaviour
         {
             case "byteMan":
                 Destroy(gameObject);
-                collision.SendMessage("pickSquareStone");
+                collision.SendMessage("playerStatement", "collection");
                 break;
         }
     }
-
 }

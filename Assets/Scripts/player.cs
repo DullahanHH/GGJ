@@ -6,7 +6,7 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     public int health = 1;
-    public int stoneCounter = 0;
+    public bool isStoneExisted = false;
     void Start()
     {
         
@@ -25,8 +25,12 @@ public class player : MonoBehaviour
 
     private void pickSquareStone()
     {
-        stoneCounter++;
-        print(stoneCounter);
+        isStoneExisted = true;
+    }
+
+    private void consumeSquareStone()
+    {
+        isStoneExisted = false;
     }
 
     private void throughRootGate()
@@ -34,4 +38,46 @@ public class player : MonoBehaviour
         health = (int)Math.Sqrt(health);
         print(health);
     }
+    
+    private void Die()
+    {
+        if(health <= 0)
+        {
+            playerStatement("die");
+            //reload the current scene
+        }
+        else if(health > 99)
+        {
+            playerStatement("overflow");
+            //reload the current scene
+        }
+    }
+
+    private void playerStatement(string statementVal)
+    {
+        switch (statementVal)
+        {
+            case "smallDoorBlock":
+                Debug.Log("blockblock");
+                //show up a script under the main char saying 'The door is still locked....'
+                //using dialog background pic?
+                break;
+            case "largeDoorBlock":
+                Debug.Log("largeBlock!");
+                //show up a script under the main char saying 'The door is still locked....'
+                //using dialog background pic?
+                break;
+            case "die":
+                Debug.Log("DIE!");
+                break;
+            case "overflow":
+                Debug.Log("DIE!");
+                break;
+            case "collection":
+                Debug.Log("collection!");
+                break;
+        }
+    }
+
+    
 }

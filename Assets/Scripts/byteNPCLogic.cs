@@ -5,7 +5,7 @@ using UnityEngine;
 public class byteNPCLogic : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int byteValue = 5;
+    public int byteValue = 1;
     void Start()
     {
         
@@ -24,10 +24,6 @@ public class byteNPCLogic : MonoBehaviour
             case "byteMan":
                 Destroy(gameObject);
                 collision.SendMessage("hugByteNPC", byteValue);
-                break;
-            case "rootKing":
-                break;
-            case "squareKing":
                 break;
         }
     }
