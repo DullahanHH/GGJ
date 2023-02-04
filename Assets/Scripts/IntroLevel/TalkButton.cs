@@ -9,7 +9,6 @@ public class TalkButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("true");
         Button.SetActive(true);
     }
 
