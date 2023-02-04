@@ -18,8 +18,8 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenuScenes");
     }
 
-    public void Chatper10(){
-        
+    public void Chatper1_0(){
+        SceneManager.LoadScene("Intro");
     }
     
 }
