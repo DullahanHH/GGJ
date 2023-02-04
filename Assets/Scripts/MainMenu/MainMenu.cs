@@ -21,5 +21,9 @@ public class MainMenu : MonoBehaviour
     public void Chatper1_0(){
         SceneManager.LoadScene("Intro");
     }
+
+    public void Chatper1_1(){
+        SceneManager.LoadScene("1-1");
+    }
     
 }
