@@ -15,7 +15,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Die();
     }
     private void hugByteNPC(int byteValue)
     {
@@ -51,6 +51,11 @@ public class player : MonoBehaviour
             playerStatement("overflow");
             //reload the current scene
         }
+    }
+
+    private void makeDamage(int damage)
+    {
+        health -= damage;
     }
 
     private void playerStatement(string statementVal)
