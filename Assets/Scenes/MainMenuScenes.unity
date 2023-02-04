@@ -225,7 +225,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &44071000
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,7 +506,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1412,7 +1412,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1913401083}
   - component: {fileID: 1913401084}
-  - component: {fileID: 1913401085}
   m_Layer: 5
   m_Name: OptionsMenu
   m_TagString: Untagged
@@ -1453,18 +1452,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a71b878ec8217824bb8902ee074c44db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1913401085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913401082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4875594db63efc4b815a4acb5ceda48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1985495817

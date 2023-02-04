@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    AudioSource menuBGM;
     public void PlayGame(){
         SceneManager.LoadScene("chapter-choice");
     }
@@ -15,6 +16,10 @@ public class MainMenu : MonoBehaviour
 
     public void BackToMainMenu(){
         SceneManager.LoadScene("MainMenuScenes");
+    }
+
+    public void Chatper10(){
+        
     }
     
 }
