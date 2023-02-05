@@ -2394,6 +2394,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 403322809}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 854846921}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -7630,6 +7638,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 728411843}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 854846921}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -7691,6 +7707,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 1586769354}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 945738729}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7809,6 +7833,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 1057609969}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 1987546745}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8038,6 +8070,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 1531428221}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 754283685}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 20
