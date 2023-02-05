@@ -58,8 +58,11 @@ public class player : MonoBehaviour
 
     private void pickSquareStone()
     {
-        isStoneExisted = true;
-        playerStatement("pickSquareStone");
+        if (!isStoneExisted)
+        {
+            isStoneExisted = true;
+            playerStatement("pickSquareStone");
+        }
     }
 
     public void consumeSquareStone()
@@ -76,8 +79,15 @@ public class player : MonoBehaviour
 
     private void throughRootGate()
     {
-        health = (int)Math.Sqrt(health);
-        print(health);
+        if (!isStoneExisted)
+        {
+            health = (int)Math.Sqrt(health);
+        }
+        else
+        {
+            isStoneExisted = false;
+            healthImage.color = new Color32(255, 255, 255, 100);
+        }
     }
     
     private void Die()
