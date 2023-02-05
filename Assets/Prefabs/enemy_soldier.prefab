@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2489971711218113253}
   - component: {fileID: 174753893304071497}
   - component: {fileID: 3600725479472952890}
+  - component: {fileID: 1746987232076614649}
   m_Layer: 0
   m_Name: enemy_soldier
   m_TagString: Untagged
@@ -111,3 +112,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1746987232076614649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808576514776260127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb513a0b0a571e3429d9956b12ba096a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  startPos: {x: 0, y: 0, z: 0}
+  endPos: {x: 0, y: 0, z: 0}
+  speed: 4
