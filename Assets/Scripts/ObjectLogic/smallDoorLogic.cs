@@ -37,6 +37,7 @@ public class smallDoorLogic : MonoBehaviour
     {
         if (FindObjectOfType<player>().health == this.smallDoorPW)
         {
+            FindObjectOfType<SoundManager>().PlaySound("unlock");
             Destroy(this.gameObject);
         }
         else

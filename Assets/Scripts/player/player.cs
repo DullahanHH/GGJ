@@ -32,15 +32,6 @@ public class player : MonoBehaviour
         checkHealthValue();
         Die();
 
-        if (isStoneExisted)
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                health = health * health;
-                consumeSquareStone();
-            }
-        }
-
         if (health > oldHealth)
         {
             oldHealth = health;
@@ -71,9 +62,15 @@ public class player : MonoBehaviour
         playerStatement("pickSquareStone");
     }
 
-    private void consumeSquareStone()
+    public void consumeSquareStone()
     {
-        isStoneExisted = false;
+        if (isStoneExisted)
+        {
+            health = health * health;
+            isStoneExisted = false;
+            FindObjectOfType<SoundManager>().PlaySound("iUsed");
+        }
+        
         playerStatement("consumeSquareStone");
     }
 

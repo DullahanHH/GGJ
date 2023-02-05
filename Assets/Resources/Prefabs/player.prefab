@@ -182,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3119001550310853634}
   - component: {fileID: 7583361579763682516}
-  - component: {fileID: 4744315607565381132}
+  - component: {fileID: 4077875568317431400}
   - component: {fileID: 2226874584983032774}
   - component: {fileID: 1000473081992093065}
   - component: {fileID: 306421759}
@@ -264,8 +264,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4744315607565381132
-BoxCollider2D:
+--- !u!58 &4077875568317431400
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -278,18 +278,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
-  m_EdgeRadius: 0
+  m_Radius: 0.47
 --- !u!50 &2226874584983032774
 Rigidbody2D:
   serializedVersion: 4
@@ -343,6 +333,7 @@ MonoBehaviour:
   displayText: {fileID: 3425366371380146151}
   increaseParticle: {fileID: 5777522634853680950}
   decreaseParticle: {fileID: 7107822061167460725}
+  talkUI: {fileID: 0}
 --- !u!95 &1012048865
 Animator:
   serializedVersion: 5

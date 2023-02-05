@@ -21,6 +21,7 @@ public class stoneLogic : MonoBehaviour
         switch (collision.tag)
         {
             case "byteMan":
+                FindObjectOfType<SoundManager>().PlaySound("iPickup");
                 Destroy(gameObject);
                 collision.SendMessage("pickSquareStone");
                 break;
