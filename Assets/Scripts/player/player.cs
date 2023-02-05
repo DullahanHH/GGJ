@@ -48,7 +48,7 @@ public class player : MonoBehaviour
     }
     void checkHealthValue(){
         healthText = GameObject.Find("byteValue").GetComponent<TextMeshProUGUI>();
-        healthText.text = "Current Bytes: " + health + "/99";
+        healthText.text = "Current Bytes: " + health + "/100";
     }
 
     private void hugByteNPC(int byteValue)
@@ -98,7 +98,7 @@ public class player : MonoBehaviour
             playerStatement("die");
             //reload the current scene
         }
-        else if(health > 99)
+        else if(health > 100)
         {
             playerStatement("overflow");
             //reload the current scene
