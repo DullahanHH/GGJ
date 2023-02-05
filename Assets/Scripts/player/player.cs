@@ -19,10 +19,12 @@ public class player : MonoBehaviour
     public ParticleSystem decreaseParticle;
     public GameObject alertDoor;
     public GameObject alertDie;
+    public playerController controller;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
         oldHealth = health;
+        controller = GetComponent<playerController>();
     }
 
     // Update is called once per frame
@@ -116,19 +118,23 @@ public class player : MonoBehaviour
         {
             case "smallDoorBlock":
                 alertDoor.SetActive(true);
+                controller.enabled = false;
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
             case "largeDoorBlock":
                 alertDoor.SetActive(true);
+                controller.enabled = false;
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
             case "die":
                 alertDie.SetActive(true);
+                controller.enabled = false;
                 break;
             case "overflow":
                 alertDie.SetActive(true);
+                controller.enabled = false;
                 break;
             case "collection":
                 Debug.Log("collection!");
