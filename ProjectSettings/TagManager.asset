@@ -12,6 +12,7 @@ TagManager:
   - smallDoor
   - Music
   - BGM
+  - airwall
   layers:
   - Default
   - TransparentFX

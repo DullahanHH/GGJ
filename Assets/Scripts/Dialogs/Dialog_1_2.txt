@@ -1,0 +1,6 @@
+Square
+Hmmm...It's been a long time, but I will never forget the power of roots, makes me sick to the stomach.Squ...
+Square
+Young one, this is called the door of Roots. Passing through it will affect your number by taking the square root of it. 
+Square
+If your number is no longer an integer after the square root, the floor of that number will be taken. Squ...
