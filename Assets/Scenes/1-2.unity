@@ -4764,6 +4764,7 @@ MonoBehaviour:
   index: 0
   face01: {fileID: 130871565, guid: f5b1a3a36f0d19348b91999e5d44cb25, type: 3}
   face02: {fileID: -1478812308, guid: 0a289fc20fe5c6846b13473a2052730d, type: 3}
+  face03: {fileID: 0}
   face1Position: {x: 0, y: 0, z: 0}
   face2Position: {x: 900, y: 100, z: 0}
 --- !u!114 &602301444
@@ -4813,6 +4814,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: talkUI
+      value: 
+      objectReference: {fileID: 352730215}
+    - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: alertDoor
       value: 
       objectReference: {fileID: 352730215}
     - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}

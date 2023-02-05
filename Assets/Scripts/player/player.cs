@@ -17,7 +17,8 @@ public class player : MonoBehaviour
 
     public ParticleSystem increaseParticle;
     public ParticleSystem decreaseParticle;
-    public GameObject talkUI;
+    public GameObject alertDoor;
+    public GameObject alertDie;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
@@ -47,7 +48,7 @@ public class player : MonoBehaviour
     }
     void checkHealthValue(){
         healthText = GameObject.Find("byteValue").GetComponent<TextMeshProUGUI>();
-        healthText.text = "Current Bytes: " + health + "/99";
+        healthText.text = "Current Bytes: " + health + "/100";
     }
 
     private void hugByteNPC(int byteValue)
@@ -58,8 +59,11 @@ public class player : MonoBehaviour
 
     private void pickSquareStone()
     {
-        isStoneExisted = true;
-        playerStatement("pickSquareStone");
+        if (!isStoneExisted)
+        {
+            isStoneExisted = true;
+            playerStatement("pickSquareStone");
+        }
     }
 
     public void consumeSquareStone()
@@ -76,8 +80,15 @@ public class player : MonoBehaviour
 
     private void throughRootGate()
     {
-        health = (int)Math.Sqrt(health);
-        print(health);
+        if (!isStoneExisted)
+        {
+            health = (int)Math.Sqrt(health);
+        }
+        else
+        {
+            isStoneExisted = false;
+            healthImage.color = new Color32(255, 255, 255, 100);
+        }
     }
     
     private void Die()
@@ -87,7 +98,7 @@ public class player : MonoBehaviour
             playerStatement("die");
             //reload the current scene
         }
-        else if(health > 99)
+        else if(health > 100)
         {
             playerStatement("overflow");
             //reload the current scene
@@ -104,21 +115,20 @@ public class player : MonoBehaviour
         switch (statementVal)
         {
             case "smallDoorBlock":
-                Debug.Log("blockblock");
+                alertDoor.SetActive(true);
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
             case "largeDoorBlock":
-                Debug.Log("largeBlock!");
-                talkUI.SetActive(true);
+                alertDoor.SetActive(true);
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
             case "die":
-                Debug.Log("DIE!");
+                alertDie.SetActive(true);
                 break;
             case "overflow":
-                Debug.Log("DIE!");
+                alertDie.SetActive(true);
                 break;
             case "collection":
                 Debug.Log("collection!");
