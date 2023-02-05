@@ -45,11 +45,13 @@ public class player : MonoBehaviour
         {
             oldHealth = health;
             increaseParticle.Play();
+            FindObjectOfType<SoundManager>().PlaySound("bRise");
         }
         if (health < oldHealth)
         {
             oldHealth = health;
             decreaseParticle.Play();
+            FindObjectOfType<SoundManager>().PlaySound("bDown");
         }
     }
     void checkHealthValue(){
