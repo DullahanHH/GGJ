@@ -17017,6 +17017,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a434ea41ac54b2545adb0b2ff8d3bd1e, type: 3}
+--- !u!1 &876557390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876557392}
+  - component: {fileID: 876557391}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &876557391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876557390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380a03dfa857ed842a037813e2900d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  genPoints:
+  - {x: -7, y: 64}
+  - {x: -6, y: 64}
+  - {x: -5, y: 64}
+  - {x: -4, y: 64}
+  - {x: -3, y: 64}
+  - {x: -2, y: 64}
+  - {x: -1, y: 64}
+  - {x: 0, y: 64}
+  - {x: 1, y: 64}
+  - {x: 2, y: 64}
+  - {x: 3, y: 64}
+  - {x: 4, y: 64}
+  - {x: 5, y: 64}
+  - {x: 6, y: 64}
+  - {x: 7, y: 64}
+  soldier: {fileID: 5808576514776260127, guid: eb19c636564f75546a04631d0ddff404, type: 3}
+--- !u!4 &876557392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876557390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.04, y: 64.03, z: -10.567751}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &907234227
 GameObject:
   m_ObjectHideFlags: 0
