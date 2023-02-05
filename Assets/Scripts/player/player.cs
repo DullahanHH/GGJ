@@ -21,6 +21,15 @@ public class player : MonoBehaviour
     {
         checkHealthValue();
         Die();
+
+        // ≤‚ ‘”√
+        if (isStoneExisted)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                health = health * health;
+            }
+        }
     }
     private void checkHealthValue(){
         healthText.text = "Current Bytes: " + health + "/99";
