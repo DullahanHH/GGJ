@@ -24,6 +24,7 @@ public class Dialog_logic : MonoBehaviour
     // Start is called before the first frame update
 
     public static bool isDialogFinished;
+    public static bool isFinalDialogFinished = false;
 
     void Awake()
     {
@@ -89,8 +90,8 @@ public class Dialog_logic : MonoBehaviour
                 index++;
                 break;
             case "Special":
-                GameObject crown = GameObject.Find("Crown");
-                crown.transform.position = Vector3.MoveTowards(crown.transform.position, new Vector3(2.09f,82.23f,0), 3f*Time.deltaTime);
+                Debug.Log("asdadasgfa");
+                isFinalDialogFinished = true;
                 index++;
                 break;
         }
