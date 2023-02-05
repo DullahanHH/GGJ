@@ -12,9 +12,16 @@ public class player : MonoBehaviour
     public Image healthImage;
     public bool isStoneExisted = false;
     public TextMeshPro displayText;
+
+    private int oldHealth;
+
+    public ParticleSystem increaseParticle;
+    public ParticleSystem decreaseParticle;
+    public GameObject talkUI;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
+        oldHealth = health;
     }
 
     // Update is called once per frame
@@ -32,6 +39,19 @@ public class player : MonoBehaviour
                 health = health * health;
                 consumeSquareStone();
             }
+        }
+
+        if (health > oldHealth)
+        {
+            oldHealth = health;
+            increaseParticle.Play();
+            FindObjectOfType<SoundManager>().PlaySound("bRise");
+        }
+        if (health < oldHealth)
+        {
+            oldHealth = health;
+            decreaseParticle.Play();
+            FindObjectOfType<SoundManager>().PlaySound("bDown");
         }
     }
     void checkHealthValue(){
@@ -93,6 +113,7 @@ public class player : MonoBehaviour
                 break;
             case "largeDoorBlock":
                 Debug.Log("largeBlock!");
+                talkUI.SetActive(true);
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;

@@ -26,7 +26,7 @@ public class CamFollow : MonoBehaviour
         {
             if (target.position != transform.position)
             {
-                Vector3 targetPos = new Vector3(target.position.x, target.position.y + 1, 0);
+                Vector3 targetPos = new Vector3(target.position.x, target.position.y, 0);
                 transform.position = Vector3.Lerp(transform.position, targetPos, smooth);
             }
             
