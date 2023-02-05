@@ -7645,7 +7645,7 @@ PrefabInstance:
     - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: DestroyTrigger
       value: 
-      objectReference: {fileID: 854846921}
+      objectReference: {fileID: 1701181469}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 21
