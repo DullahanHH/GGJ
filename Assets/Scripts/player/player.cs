@@ -11,6 +11,7 @@ public class player : MonoBehaviour
     public TextMeshProUGUI healthText;
     public Image healthImage;
     public bool isStoneExisted = false;
+    public TextMeshPro displayText;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
@@ -19,6 +20,8 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        displayText.text = health.ToString();
+
         checkHealthValue();
         Die();
 
