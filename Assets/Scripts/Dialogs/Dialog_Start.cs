@@ -19,6 +19,7 @@ public class Dialog_Start : MonoBehaviour
         if(Dialog_logic.isDialogFinished){
             camera.enabled = true;
             player.GetComponent<playerController>().enabled = true;
+            Dialog_logic.isDialogFinished = false;
         }
     }
 }
