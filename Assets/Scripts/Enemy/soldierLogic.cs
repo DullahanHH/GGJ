@@ -55,9 +55,4 @@ public class soldierLogic : MonoBehaviour
                 break;
         }
     }
-
-    public void charge()
-    {
-        transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(this.transform.position.x,this.transform.position.y-70, 0), speed * Time.deltaTime);
-    }
 }
