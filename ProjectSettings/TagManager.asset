@@ -10,6 +10,7 @@ TagManager:
   - soldier
   - byteMan
   - smallDoor
+  - airwall
   layers:
   - Default
   - TransparentFX
