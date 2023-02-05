@@ -250,7 +250,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1893423194, guid: 2b0b738a400b7ca4a86b7d075e163dbe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -335,6 +335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  healthText: {fileID: 0}
+  healthImage: {fileID: 0}
   isStoneExisted: 0
   displayText: {fileID: 3425366371380146151}
 --- !u!95 &1012048865
