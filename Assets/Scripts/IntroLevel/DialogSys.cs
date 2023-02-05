@@ -72,12 +72,12 @@ public class DialogSys : MonoBehaviour
         switch(textList[index]){
             case "Player":
                 faceImage.sprite =  face01;
-                faceImage.transform.position = new Vector3(-6.5f,-3,0);
+                faceImage.transform.position = new Vector3(-5f,-3,0);
                 index++;
                 break;
             case "Square":
                 faceImage.sprite =  face02;
-                faceImage.transform.position = new Vector3(7,-3,0);
+                faceImage.transform.position = new Vector3(9,-3,0);
                 index++;
                 break;
         }
