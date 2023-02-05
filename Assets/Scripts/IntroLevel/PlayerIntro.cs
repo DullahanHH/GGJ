@@ -27,6 +27,7 @@ public class PlayerIntro : MonoBehaviour
             Square.transform.position = Vector3.MoveTowards(startPosition2.position, endPosition2, speed*Time.deltaTime);
         }
         if(transform.position == endPosition2){
+            Debug.Log("???");
             MainMenu mainMenu = new MainMenu();
             mainMenu.Chatper1_1();
         }
