@@ -7,6 +7,8 @@ public class soldierGen : MonoBehaviour
     public Vector2[] genPoints;
     public GameObject soldier;
 
+    public float stageTwoLine = 20f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +32,11 @@ public class soldierGen : MonoBehaviour
                 GameObject enemyCopy = Instantiate(soldier, genPoints[i], soldier.transform.rotation);
             }
         }
+
+        if (FindObjectOfType<player>().transform.position.y > stageTwoLine)
+        {
+            FindObjectOfType<RootKing>().WaveSword();
+        }
+        
     }
 }

@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 80764860}
   m_Layer: 0
   m_Name: soldierFin
-  m_TagString: Untagged
+  m_TagString: solFin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,7 +285,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.92260265, y: 0.9303427}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!50 &5663196342219374108
 Rigidbody2D:
@@ -341,3 +341,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  damage: 1
+  displayText: {fileID: 804660376873233439}
