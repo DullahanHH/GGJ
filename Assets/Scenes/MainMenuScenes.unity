@@ -1850,6 +1850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BGMManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8210329364996962600, guid: bac0b67e7ba263848b3ca7a02cb9ba30, type: 3}
+      propertyPath: audioDicts.Array.data[3].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: af3ac9b636588044787bb2b50189063d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac0b67e7ba263848b3ca7a02cb9ba30, type: 3}
 --- !u!1001 &5586992776490763998

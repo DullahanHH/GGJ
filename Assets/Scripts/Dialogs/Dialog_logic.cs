@@ -24,7 +24,7 @@ public class Dialog_logic : MonoBehaviour
     // Start is called before the first frame update
 
     public static bool isDialogFinished;
-    public static bool isFinalDialogFinished;
+    public static bool isFinalDialogFinished = false;
 
     void Awake()
     {

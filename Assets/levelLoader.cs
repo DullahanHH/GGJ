@@ -12,7 +12,6 @@ public class levelLoader : MonoBehaviour
     {
         if (Dialog_logic.isFinalDialogFinished) {
             LoadNextLevel();
-            Debug.Log("asdadasgfa");
         }
     }
 
@@ -26,7 +25,8 @@ public void LoadNextLevel()
 IEnumerator LoadLevel(int levelIndex) {
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(levelIndex);
+        FindObjectOfType<BGMManager>().ReplaceSound("final");
+        SceneManager.LoadScene("Credits");
     }
 }
 
