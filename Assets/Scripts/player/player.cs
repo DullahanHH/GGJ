@@ -18,6 +18,7 @@ public class player : MonoBehaviour
     public ParticleSystem increaseParticle;
     public ParticleSystem decreaseParticle;
     public GameObject alertDoor;
+    public GameObject alertDie;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
@@ -117,10 +118,10 @@ public class player : MonoBehaviour
                 //using dialog background pic?
                 break;
             case "die":
-                Debug.Log("DIE!");
+                alertDie.SetActive(true);
                 break;
             case "overflow":
-                Debug.Log("DIE!");
+                alertDie.SetActive(true);
                 break;
             case "collection":
                 Debug.Log("collection!");
