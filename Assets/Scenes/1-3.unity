@@ -135,6 +135,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 900956437}
     - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: alertDoor
+      value: 
+      objectReference: {fileID: 900956437}
+    - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 886709683}
@@ -142,6 +146,14 @@ PrefabInstance:
       propertyPath: healthImage
       value: 
       objectReference: {fileID: 1369543065}
+    - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: talkLargeDoor
+      value: 
+      objectReference: {fileID: 900956437}
+    - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: talkSmallDoor
+      value: 
+      objectReference: {fileID: 1349324944}
     - target: {fileID: 3119001550310853634, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3740,6 +3752,7 @@ MonoBehaviour:
   index: 0
   face01: {fileID: -617904937, guid: 0c1169758cb792c408e529d032ea2bdd, type: 3}
   face02: {fileID: -1478812308, guid: 0a289fc20fe5c6846b13473a2052730d, type: 3}
+  face03: {fileID: 0}
   face1Position: {x: 0, y: 0, z: 0}
   face2Position: {x: 900, y: 100, z: 0}
 --- !u!114 &1201941971
@@ -3848,6 +3861,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1349324944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118475746910180030, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+  m_PrefabInstance: {fileID: 871615231}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1369543062
 GameObject:
   m_ObjectHideFlags: 0

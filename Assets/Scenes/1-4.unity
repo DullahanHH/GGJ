@@ -3566,6 +3566,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 318868536}
     - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: alertDoor
+      value: 
+      objectReference: {fileID: 318868536}
+    - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 838118562}
@@ -3573,6 +3577,14 @@ PrefabInstance:
       propertyPath: healthImage
       value: 
       objectReference: {fileID: 1002782998}
+    - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: talkLargeDoor
+      value: 
+      objectReference: {fileID: 318868536}
+    - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: talkSmallDoor
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3119001550310853634, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: m_RootOrder
       value: 2

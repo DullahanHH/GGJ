@@ -67,7 +67,6 @@ public class Dialog_logic : MonoBehaviour
     IEnumerator SetTextUI(){
         textFinished = false;
         textLabel.text = "";
-        Debug.Log("??");
         switch(textList[index]){
             case "Player":
                 faceImage.sprite =  face01;
@@ -87,6 +86,11 @@ public class Dialog_logic : MonoBehaviour
             case "Root":
                 faceImage.sprite =  face03;
                 faceImage.transform.position = face1Position;
+                index++;
+                break;
+            case "Special":
+                GameObject crown = GameObject.Find("Crown");
+                crown.transform.position = Vector3.MoveTowards(crown.transform.position, new Vector3(2.09f,82.23f,0), 3f*Time.deltaTime);
                 index++;
                 break;
         }
