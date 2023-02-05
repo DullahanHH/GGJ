@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class player : MonoBehaviour
 {
     public int health = 1;
     public bool isStoneExisted = false;
+    public TextMeshPro displayText;
     void Start()
     {
         
@@ -15,14 +17,17 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        displayText.text = health.ToString();
+
         Die();
 
-        // ≤‚ ‘”√
+        // For testing!!!!!!!!!!
         if (isStoneExisted)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 health = health * health;
+                isStoneExisted = false;
             }
         }
     }
