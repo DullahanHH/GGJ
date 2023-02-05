@@ -12,6 +12,7 @@ public class player : MonoBehaviour
     public Image healthImage;
     public bool isStoneExisted = false;
     public TextMeshPro displayText;
+    public GameObject talkUI;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
@@ -93,6 +94,7 @@ public class player : MonoBehaviour
                 break;
             case "largeDoorBlock":
                 Debug.Log("largeBlock!");
+                talkUI.SetActive(true);
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
