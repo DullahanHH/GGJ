@@ -16,6 +16,15 @@ public class player : MonoBehaviour
     void Update()
     {
         Die();
+
+        // ≤‚ ‘”√
+        if (isStoneExisted)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                health = health * health;
+            }
+        }
     }
     private void hugByteNPC(int byteValue)
     {

@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class largeDoorLogic : MonoBehaviour
 {
     public int largeDoorPW;
+    public float detectRadius = 1.25f;
+    public string loadScenceName;
 
-    public GameObject largeDoor;
     void Start()
     {
-        largeDoor = GameObject.Find("large_door");
+        
     }
 
     // Update is called once per frame
@@ -20,8 +21,9 @@ public class largeDoorLogic : MonoBehaviour
     }
     private void distanceDetermine()
     {
-        float sqrDistance = (FindObjectOfType<player>().transform.position - largeDoor.transform.position).sqrMagnitude;
-        if (sqrDistance < 1.25 * 1.25)
+        float distance = (FindObjectOfType<player>().transform.position - this.transform.position).magnitude;
+        
+        if (distance <= detectRadius)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -34,7 +36,7 @@ public class largeDoorLogic : MonoBehaviour
     {
         if (FindObjectOfType<player>().health == largeDoorPW)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(loadScenceName);
         }
         else
         {
