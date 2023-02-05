@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void BackToMainMenu(){
+        FindObjectOfType<BGMManager>().ReplaceSound("main");
         SceneManager.LoadScene("MainMenuScenes");
     }
 
