@@ -9,11 +9,13 @@ public class TalkButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Crown!");
         Button.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        Debug.Log("Crown?");
         Button.SetActive(false);
     }
 

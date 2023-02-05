@@ -17,7 +17,8 @@ public class player : MonoBehaviour
 
     public ParticleSystem increaseParticle;
     public ParticleSystem decreaseParticle;
-    public GameObject talkUI;
+    public GameObject alertDoor;
+    public GameObject alertDie;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
@@ -114,21 +115,20 @@ public class player : MonoBehaviour
         switch (statementVal)
         {
             case "smallDoorBlock":
-                Debug.Log("blockblock");
+                alertDoor.SetActive(true);
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
             case "largeDoorBlock":
-                Debug.Log("largeBlock!");
-                talkUI.SetActive(true);
+                alertDoor.SetActive(true);
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
             case "die":
-                Debug.Log("DIE!");
+                alertDie.SetActive(true);
                 break;
             case "overflow":
-                Debug.Log("DIE!");
+                alertDie.SetActive(true);
                 break;
             case "collection":
                 Debug.Log("collection!");
