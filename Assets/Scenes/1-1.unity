@@ -7226,6 +7226,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196314962}
   m_CullTransparentMesh: 1
+--- !u!1 &1312235331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3700784678010878797, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+  m_PrefabInstance: {fileID: 1469437542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1331714707
 GameObject:
   m_ObjectHideFlags: 0
@@ -7593,6 +7598,10 @@ PrefabInstance:
       propertyPath: healthImage
       value: 
       objectReference: {fileID: 1196314965}
+    - target: {fileID: 1000473081992093065, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3119001550310853634, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7775,6 +7784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkUI: {fileID: 1800055144}
   camera: {fileID: 921257698}
+  player: {fileID: 1312235331}
 --- !u!1 &1672819621
 GameObject:
   m_ObjectHideFlags: 0
