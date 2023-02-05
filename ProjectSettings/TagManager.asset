@@ -11,6 +11,7 @@ TagManager:
   - byteMan
   - smallDoor
   - Music
+  - BGM
   layers:
   - Default
   - TransparentFX
