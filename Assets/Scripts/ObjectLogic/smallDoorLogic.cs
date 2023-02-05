@@ -6,11 +6,8 @@ public class smallDoorLogic : MonoBehaviour
 {
     public int smallDoorPW;
 
-    public GameObject smallDoor;
-
     void Start()
     {
-        smallDoor = GameObject.Find("small_door");
         
     }
 
@@ -22,7 +19,7 @@ public class smallDoorLogic : MonoBehaviour
 
     private void distanceDetermine()
     {
-        float sqrDistance = (FindObjectOfType<player>().transform.position - smallDoor.transform.position).sqrMagnitude;
+        float sqrDistance = (FindObjectOfType<player>().transform.position - transform.position).sqrMagnitude;
         if (sqrDistance < 1.25 * 1.25)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -34,9 +31,9 @@ public class smallDoorLogic : MonoBehaviour
 
     private void validatePW()
     {
-        if (FindObjectOfType<player>().health == smallDoorPW)
+        if (FindObjectOfType<player>().health == this.smallDoorPW)
         {
-            Destroy(smallDoor);
+            Destroy(this.gameObject);
         }
         else
         {
