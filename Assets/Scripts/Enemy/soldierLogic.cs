@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class soldierLogic : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class soldierLogic : MonoBehaviour
     public Vector3 startPos;
     public Vector3 endPos;
     public float speed = 4f;
+    public TextMeshPro displayText;
+
     private bool OnMove;
     void Start()
     {
@@ -17,6 +20,8 @@ public class soldierLogic : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        displayText.text = damage.ToString();
+
         soldierMove();
     }
 

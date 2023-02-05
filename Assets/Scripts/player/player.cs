@@ -12,10 +12,16 @@ public class player : MonoBehaviour
     public Image healthImage;
     public bool isStoneExisted = false;
     public TextMeshPro displayText;
+
+    private int oldHealth;
+
+    public ParticleSystem increaseParticle;
+    public ParticleSystem decreaseParticle;
     public GameObject talkUI;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
+        oldHealth = health;
     }
 
     // Update is called once per frame
@@ -33,6 +39,17 @@ public class player : MonoBehaviour
                 health = health * health;
                 consumeSquareStone();
             }
+        }
+
+        if (health > oldHealth)
+        {
+            oldHealth = health;
+            increaseParticle.Play();
+        }
+        if (health < oldHealth)
+        {
+            oldHealth = health;
+            decreaseParticle.Play();
         }
     }
     void checkHealthValue(){

@@ -5,6 +5,10 @@ using UnityEngine;
 public class rootGateLogic : MonoBehaviour
 {
     public int gateHealth = 3;
+    public SpriteRenderer sr;
+
+    public Sprite broken_1;
+    public Sprite broken_2;
     void Start()
     {
         
@@ -21,10 +25,12 @@ public class rootGateLogic : MonoBehaviour
         if(gateHealth == 2)
         {
             // door pic with 2 health
+            sr.sprite = broken_1;
         }
         if(gateHealth == 1)
         {
             // door pic with 1 health
+            sr.sprite = broken_2;
         }
         if (gateHealth == 0)
         {
