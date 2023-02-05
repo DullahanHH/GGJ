@@ -9117,6 +9117,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 119215196, guid: b3d523b777ebd5a4783bd4ba0e155eae, type: 3}
+      propertyPath: largeDoorPW
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 119215196, guid: b3d523b777ebd5a4783bd4ba0e155eae, type: 3}
       propertyPath: loadScenceName
       value: 1-4
       objectReference: {fileID: 0}
