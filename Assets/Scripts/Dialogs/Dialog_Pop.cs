@@ -5,16 +5,14 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-public class DialogSys : MonoBehaviour
+public class Dialog_Pop : MonoBehaviour
 {
     [Header("UI components")]
     public TextMeshProUGUI textLabel;
-    public Image faceImage;
     [Header("Text components")]
     public TextAsset textFile;
     public int index;
     [Header("Head Image")]
-    public Sprite face01, face02;
     bool textFinished;
     bool cancelTyping;
     private float TextSpeed = 0.05f;
@@ -23,8 +21,6 @@ public class DialogSys : MonoBehaviour
 
     public static bool isDialogFinished;
 
-    public float walkSpeed = 4f;
-    public GameObject Button;
     void Awake()
     {
         GetTextFromFile(textFile);
@@ -40,7 +36,6 @@ public class DialogSys : MonoBehaviour
     {
         if((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && index == textList.Count){
             gameObject.SetActive(false);
-            Button.SetActive(false);
             index = 0;
             isDialogFinished = true;             
             return;
@@ -69,29 +64,14 @@ public class DialogSys : MonoBehaviour
         textFinished = false;
         textLabel.text = "";
 
-        switch(textList[index]){
-            case "Player":
-                faceImage.sprite =  face01;
-                faceImage.transform.position = new Vector3(-5f,-3,0);
-                index++;
-                break;
-            case "Square":
-                faceImage.sprite =  face02;
-                faceImage.transform.position = new Vector3(9,-3,0);
-                index++;
-                break;
-        }
-
         int i = 0;
         while(!cancelTyping && i< textList[index].Length-1){
             textLabel.text += textList[index][i];
             i++;
             yield return new WaitForSeconds(TextSpeed);
         }
-
         textLabel.text = textList[index];
         cancelTyping = false;
-
         textFinished = true;
         index++;
     }
