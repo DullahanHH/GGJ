@@ -13,7 +13,7 @@ public class player : MonoBehaviour
     public bool isStoneExisted = false;
     void Start()
     {
-        
+        //healthText = TextMeshProUGUI.FindObjectOfType
     }
 
     // Update is called once per frame
@@ -22,16 +22,17 @@ public class player : MonoBehaviour
         checkHealthValue();
         Die();
 
-        // ≤‚ ‘”√
         if (isStoneExisted)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 health = health * health;
+                consumeSquareStone();
             }
         }
     }
-    private void checkHealthValue(){
+    void checkHealthValue(){
+        healthText = GameObject.Find("byteValue").GetComponent<TextMeshProUGUI>();
         healthText.text = "Current Bytes: " + health + "/99";
     }
 
