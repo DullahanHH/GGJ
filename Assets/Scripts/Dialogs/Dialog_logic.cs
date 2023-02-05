@@ -14,7 +14,7 @@ public class Dialog_logic : MonoBehaviour
     public TextAsset textFile;
     public int index;
     [Header("Head Image")]
-    public Sprite face01, face02;
+    public Sprite face01, face02, face03;
     bool textFinished;
     bool cancelTyping;
     private float TextSpeed = 0.05f;
@@ -76,9 +76,17 @@ public class Dialog_logic : MonoBehaviour
                 break;
             case "Square":
                 faceImage.sprite =  face02;
-                Debug.Log(face2Position);
                 faceImage.transform.position = face2Position;
-                Debug.Log(faceImage.transform.position);
+                index++;
+                break;
+            case "Soldier":
+                faceImage.sprite =  face03;
+                faceImage.transform.position = face1Position;
+                index++;
+                break;
+            case "Root":
+                faceImage.sprite =  face03;
+                faceImage.transform.position = face1Position;
                 index++;
                 break;
         }
