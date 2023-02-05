@@ -132,5 +132,12 @@ public class player : MonoBehaviour
         }
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag.Equals("solFin"))
+        {
+            makeDamage(1);
+            Destroy(collision.gameObject);
+        }
+    }
 }

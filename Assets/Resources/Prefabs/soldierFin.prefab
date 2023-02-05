@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 80764860}
   m_Layer: 0
   m_Name: soldierFin
-  m_TagString: Untagged
+  m_TagString: solFin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,3 +341,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  damage: 1
+  displayText: {fileID: 804660376873233439}

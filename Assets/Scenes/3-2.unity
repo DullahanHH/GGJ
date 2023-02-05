@@ -17047,21 +17047,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genPoints:
-  - {x: -7, y: 64}
-  - {x: -6, y: 64}
-  - {x: -5, y: 64}
-  - {x: -4, y: 64}
-  - {x: -3, y: 64}
-  - {x: -2, y: 64}
-  - {x: -1, y: 64}
-  - {x: 0, y: 64}
-  - {x: 1, y: 64}
-  - {x: 2, y: 64}
-  - {x: 3, y: 64}
-  - {x: 4, y: 64}
-  - {x: 5, y: 64}
-  - {x: 6, y: 64}
-  - {x: 7, y: 64}
+  - {x: -7, y: 60}
+  - {x: -6, y: 60}
+  - {x: -5, y: 60}
+  - {x: -4, y: 60}
+  - {x: -3, y: 60}
+  - {x: -2, y: 60}
+  - {x: -1, y: 60}
+  - {x: 0, y: 60}
+  - {x: 1, y: 60}
+  - {x: 2, y: 60}
+  - {x: 3, y: 60}
+  - {x: 4, y: 60}
+  - {x: 5, y: 60}
+  - {x: 6, y: 60}
+  - {x: 7, y: 60}
   soldier: {fileID: 5808576514776260127, guid: eb19c636564f75546a04631d0ddff404, type: 3}
 --- !u!4 &876557392
 Transform:
@@ -17509,6 +17509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1365139647}
   smooth: 0.1
+  ChangeSpeed: 1
 --- !u!4 &1120126190
 Transform:
   m_ObjectHideFlags: 0
