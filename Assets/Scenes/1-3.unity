@@ -3209,6 +3209,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 365717820}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 1351825287}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 8

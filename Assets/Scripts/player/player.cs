@@ -118,13 +118,11 @@ public class player : MonoBehaviour
         {
             case "smallDoorBlock":
                 alertDoor.SetActive(true);
-                controller.enabled = false;
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
             case "largeDoorBlock":
                 alertDoor.SetActive(true);
-                controller.enabled = false;
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
