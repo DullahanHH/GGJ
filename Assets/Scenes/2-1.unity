@@ -208,7 +208,7 @@ RectTransform:
   m_GameObject: {fileID: 124156740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 52.21, y: 52.21, z: 52.21}
+  m_LocalScale: {x: 90, y: 90, z: 90}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 435587861}
@@ -219,8 +219,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.5860596, y: 7}
-  m_SizeDelta: {x: 15.9814, y: 6.0965}
+  m_AnchoredPosition: {x: 3.6, y: 7}
+  m_SizeDelta: {x: 16, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &124156742
 MonoBehaviour:
@@ -865,7 +865,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b0bb7b5ba498f449affaf9813149931, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.990566, g: 0.98495907, b: 0.98495907, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1324,7 +1324,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b0bb7b5ba498f449affaf9813149931, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.990566, g: 0.9756141, b: 0.9756141, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1976,7 +1976,7 @@ RectTransform:
   m_GameObject: {fileID: 974704803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 297295818}
@@ -1988,7 +1988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -225, y: 25}
+  m_AnchoredPosition: {x: -450, y: 50}
   m_SizeDelta: {x: 450, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974704805
@@ -2221,7 +2221,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b0bb7b5ba498f449affaf9813149931, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.98490566, b: 0.98490566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7136,7 +7136,7 @@ RectTransform:
   m_GameObject: {fileID: 1273766944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 52.21, y: 52.21, z: 52.21}
+  m_LocalScale: {x: 104, y: 104, z: 104}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 421806034}
@@ -7145,8 +7145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -165}
-  m_SizeDelta: {x: 17.2163, y: 2.943}
+  m_AnchoredPosition: {x: 0, y: -360}
+  m_SizeDelta: {x: 17, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273766946
 MonoBehaviour:
@@ -7262,10 +7262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -7590,7 +7590,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b0bb7b5ba498f449affaf9813149931, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9716981, g: 0.96619797, b: 0.96619797, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7914,7 +7914,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b0bb7b5ba498f449affaf9813149931, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.98490566, b: 0.98490566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7998,7 +7998,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b0bb7b5ba498f449affaf9813149931, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.98490566, b: 0.98490566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8437,7 +8437,7 @@ PrefabInstance:
     - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: healthText
       value: 
-      objectReference: {fileID: 1702485597}
+      objectReference: {fileID: 0}
     - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: healthImage
       value: 

@@ -40,6 +40,10 @@ public class largeDoorLogic : MonoBehaviour
     {
         if (FindObjectOfType<player>().health == largeDoorPW)
         {
+            if (loadScenceName == "3-2")
+            {
+                FindObjectOfType<BGMManager>().ReplaceSound("boss");
+            }
             SceneManager.LoadScene(loadScenceName);
         }
         else

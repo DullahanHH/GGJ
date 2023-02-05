@@ -59,7 +59,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("3-1");
     }
     public void Chatper3_2(){
-        FindObjectOfType<BGMManager>().ReplaceSound("level");
+        FindObjectOfType<BGMManager>().ReplaceSound("boss");
         SceneManager.LoadScene("3-2");
     }
   public void reloadScene(){
