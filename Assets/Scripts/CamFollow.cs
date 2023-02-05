@@ -12,7 +12,7 @@ public class CamFollow : MonoBehaviour
 
     private float maximum = 13;
 
-    private float minmum = 7;
+    private float minmum = 5;
 
 
 
