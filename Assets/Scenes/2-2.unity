@@ -2988,6 +2988,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 119215196, guid: b3d523b777ebd5a4783bd4ba0e155eae, type: 3}
+      propertyPath: largeDoorPW
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5746116650819322261, guid: b3d523b777ebd5a4783bd4ba0e155eae, type: 3}
       propertyPath: m_Name
       value: large_door
@@ -3576,6 +3580,10 @@ PrefabInstance:
       propertyPath: health
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: talkUI
+      value: 
+      objectReference: {fileID: 2078985834}
     - target: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: healthText
       value: 
@@ -9215,3 +9223,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 286b112ca847e104495234054ae1737d, type: 3}
+--- !u!1 &2078985834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5746116650819322261, guid: b3d523b777ebd5a4783bd4ba0e155eae, type: 3}
+  m_PrefabInstance: {fileID: 555128933}
+  m_PrefabAsset: {fileID: 0}
