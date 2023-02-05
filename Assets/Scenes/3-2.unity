@@ -19511,6 +19511,10 @@ PrefabInstance:
       propertyPath: healthImage
       value: 
       objectReference: {fileID: 682701914}
+    - target: {fileID: 1000473081992093065, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3119001550310853634, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -19571,7 +19575,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
   m_PrefabInstance: {fileID: 1365139646}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1450475932}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dea7dfe1ca46424892e9ee3200aa6d2, type: 3}
@@ -24512,6 +24516,11 @@ RectTransform:
   m_AnchoredPosition: {x: 3.6, y: 7}
   m_SizeDelta: {x: 16, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1450475932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3700784678010878797, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+  m_PrefabInstance: {fileID: 1365139646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1527986685
 GameObject:
   m_ObjectHideFlags: 0
@@ -24729,6 +24738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkUI: {fileID: 1023318675}
   camera: {fileID: 1120126189}
+  player: {fileID: 1450475932}
 --- !u!1001 &1573326202
 PrefabInstance:
   m_ObjectHideFlags: 0

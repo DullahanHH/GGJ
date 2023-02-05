@@ -242,6 +242,10 @@ PrefabInstance:
       propertyPath: talkSmallDoor
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1000473081992093065, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3119001550310853634, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -429,6 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkUI: {fileID: 1201941969}
   camera: {fileID: 2030632977}
+  player: {fileID: 1408171812}
 --- !u!1 &365717820
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,7 +4264,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b0bb7b5ba498f449affaf9813149931, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4289,7 +4294,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 306421759, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
   m_PrefabInstance: {fileID: 319205159}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1408171812}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dea7dfe1ca46424892e9ee3200aa6d2, type: 3}
@@ -4428,6 +4433,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369543062}
   m_CullTransparentMesh: 1
+--- !u!1 &1408171812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3700784678010878797, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+  m_PrefabInstance: {fileID: 319205159}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1412309720
 PrefabInstance:
   m_ObjectHideFlags: 0

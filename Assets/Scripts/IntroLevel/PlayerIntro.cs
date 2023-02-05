@@ -28,10 +28,12 @@ public class PlayerIntro : MonoBehaviour
         }
         if(DialogSys.isDialogFinished){
             camera.enabled = false;
+            animator.SetFloat("Speed", 1);
             transform.position = Vector3.MoveTowards(startPosition.position, endPosition2, speed*Time.deltaTime);
             Square.transform.position = Vector3.MoveTowards(startPosition2.position, endPosition2, speed*Time.deltaTime);
         }
         if(transform.position == endPosition2){
+            animator.SetFloat("Speed", 0);
             MainMenu mainMenu = new MainMenu();
             mainMenu.Chatper1_1();
         }

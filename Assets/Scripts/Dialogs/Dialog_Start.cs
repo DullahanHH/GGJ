@@ -6,6 +6,7 @@ public class Dialog_Start : MonoBehaviour
 {
     public GameObject talkUI;
     public CamFollow camera;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,8 @@ public class Dialog_Start : MonoBehaviour
     void Update()
     {
         if(Dialog_logic.isDialogFinished){
-            camera.enabled = true;;
+            camera.enabled = true;
+            player.GetComponent<playerController>().enabled = true;
         }
     }
 }

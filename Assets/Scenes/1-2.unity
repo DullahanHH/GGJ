@@ -4828,6 +4828,10 @@ PrefabInstance:
       propertyPath: healthImage
       value: 
       objectReference: {fileID: 1632843405}
+    - target: {fileID: 1000473081992093065, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3119001550310853634, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4878,6 +4882,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+--- !u!1 &693657813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3700784678010878797, guid: cc741fa2e978991468ea95eedd23cded, type: 3}
+  m_PrefabInstance: {fileID: 693657812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &710944475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5425,6 +5434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkUI: {fileID: 602301441}
   camera: {fileID: 1811662156}
+  player: {fileID: 693657813}
 --- !u!1 &1130552838
 GameObject:
   m_ObjectHideFlags: 0
