@@ -17160,6 +17160,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 636542162}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 1918945933}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -18126,6 +18134,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 1365000364}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 1596706837}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -25164,6 +25180,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 1785496238}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 661367120}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -25560,6 +25584,14 @@ PrefabInstance:
       propertyPath: smallDoorPW
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: Destroybutton
+      value: 
+      objectReference: {fileID: 1822169676}
+    - target: {fileID: 1256406118621062998, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+      propertyPath: DestroyTrigger
+      value: 
+      objectReference: {fileID: 631033000}
     - target: {fileID: 1749215764598616747, guid: 336099f392f449e48b622694b2ac2877, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -25606,6 +25638,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+--- !u!1 &1822169676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118475746910180030, guid: 336099f392f449e48b622694b2ac2877, type: 3}
+  m_PrefabInstance: {fileID: 1822169675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1833922170
 GameObject:
   m_ObjectHideFlags: 0

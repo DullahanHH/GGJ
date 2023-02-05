@@ -7,6 +7,8 @@ public class smallDoorLogic : MonoBehaviour
 {
     public int smallDoorPW;
     public TextMeshPro displayText;
+    public GameObject Destroybutton;
+    public GameObject DestroyTrigger;
 
     void Start()
     {
@@ -39,6 +41,8 @@ public class smallDoorLogic : MonoBehaviour
         {
             FindObjectOfType<SoundManager>().PlaySound("unlock");
             Destroy(this.gameObject);
+            Destroy(Destroybutton);
+            Destroy(DestroyTrigger);
         }
         else
         {
