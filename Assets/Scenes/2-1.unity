@@ -968,6 +968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1748099220}
   smooth: 0.1
+  ChangeSpeed: 1
 --- !u!4 &438983402
 Transform:
   m_ObjectHideFlags: 0
@@ -6651,6 +6652,10 @@ PrefabInstance:
     - target: {fileID: 1746987232076614649, guid: 038045cd9a928014eb50adc293d56052, type: 3}
       propertyPath: speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746987232076614649, guid: 038045cd9a928014eb50adc293d56052, type: 3}
+      propertyPath: damage
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1746987232076614649, guid: 038045cd9a928014eb50adc293d56052, type: 3}
       propertyPath: endPos.x
