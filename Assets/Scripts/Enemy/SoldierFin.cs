@@ -19,7 +19,7 @@ public class SoldierFin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject, 12);
+        Destroy(gameObject, 15);
     }
 
     private void movingDown()

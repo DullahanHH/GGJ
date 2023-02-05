@@ -8,6 +8,7 @@ public class soldierGen : MonoBehaviour
     public GameObject soldier;
 
     public float stageTwoLine = 20f;
+    public float stopGenLine = 55f;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,10 @@ public class soldierGen : MonoBehaviour
         {
             FindObjectOfType<RootKing>().WaveSword();
         }
-        
+        if (FindObjectOfType<player>().transform.position.y > stopGenLine)
+        {
+            CancelInvoke("Gen");
+        }
+
     }
 }
