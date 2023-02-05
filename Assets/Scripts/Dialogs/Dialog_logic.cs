@@ -25,6 +25,7 @@ public class Dialog_logic : MonoBehaviour
 
     public static bool isDialogFinished;
     public static bool isFinalDialogFinished = false;
+    public static bool isDialogFinished14 = false;
 
     void Awake()
     {
@@ -89,9 +90,12 @@ public class Dialog_logic : MonoBehaviour
                 faceImage.transform.position = face1Position;
                 index++;
                 break;
-            case "Special":
-                Debug.Log("asdadasgfa");
+            case "Special":     
                 isFinalDialogFinished = true;
+                index++;
+                break;
+            case "Finished":
+                isDialogFinished14 = true;
                 index++;
                 break;
         }
