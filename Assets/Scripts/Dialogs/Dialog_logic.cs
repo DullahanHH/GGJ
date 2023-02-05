@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-public class DialogSys : MonoBehaviour
+public class Dialog_logic : MonoBehaviour
 {
     [Header("UI components")]
     public TextMeshProUGUI textLabel;
@@ -19,12 +19,12 @@ public class DialogSys : MonoBehaviour
     bool cancelTyping;
     private float TextSpeed = 0.05f;
     List<string> textList = new List<string>();
+    public Vector3 face1Position = new Vector3(6.72f,-0.05f,0);
+    public Vector3 face2Position = new Vector3(200,-0.05f,0);
     // Start is called before the first frame update
 
     public static bool isDialogFinished;
 
-    public float walkSpeed = 4f;
-    public GameObject Button;
     void Awake()
     {
         GetTextFromFile(textFile);
@@ -40,7 +40,6 @@ public class DialogSys : MonoBehaviour
     {
         if((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && index == textList.Count){
             gameObject.SetActive(false);
-            Button.SetActive(false);
             index = 0;
             isDialogFinished = true;             
             return;
@@ -68,16 +67,18 @@ public class DialogSys : MonoBehaviour
     IEnumerator SetTextUI(){
         textFinished = false;
         textLabel.text = "";
-
+        Debug.Log("??");
         switch(textList[index]){
             case "Player":
                 faceImage.sprite =  face01;
-                faceImage.transform.position = new Vector3(-5f,-3,0);
+                faceImage.transform.position = face1Position;
                 index++;
                 break;
             case "Square":
                 faceImage.sprite =  face02;
-                faceImage.transform.position = new Vector3(9,-3,0);
+                Debug.Log(face2Position);
+                faceImage.transform.position = face2Position;
+                Debug.Log(faceImage.transform.position);
                 index++;
                 break;
         }

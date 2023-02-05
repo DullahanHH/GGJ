@@ -17,6 +17,7 @@ public class player : MonoBehaviour
 
     public ParticleSystem increaseParticle;
     public ParticleSystem decreaseParticle;
+    public GameObject talkUI;
     void Start()
     {
         //healthText = TextMeshProUGUI.FindObjectOfType
@@ -112,6 +113,7 @@ public class player : MonoBehaviour
                 break;
             case "largeDoorBlock":
                 Debug.Log("largeBlock!");
+                talkUI.SetActive(true);
                 //show up a script under the main char saying 'The door is still locked....'
                 //using dialog background pic?
                 break;
