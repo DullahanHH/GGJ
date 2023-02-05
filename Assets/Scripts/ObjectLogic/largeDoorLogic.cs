@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class largeDoorLogic : MonoBehaviour
 {
-    public int largeDoorPW;
+    public int largeDoorPW = 2;
     public float detectRadius = 1.25f;
     public string loadScenceName;
+    public TextMeshPro displayText;
 
     void Start()
     {
@@ -17,6 +19,8 @@ public class largeDoorLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        displayText.text = largeDoorPW.ToString();
+
         distanceDetermine();
     }
     private void distanceDetermine()

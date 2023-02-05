@@ -2,30 +2,43 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class player : MonoBehaviour
 {
     public int health = 1;
+    public TextMeshProUGUI healthText;
+    public Image healthImage;
     public bool isStoneExisted = false;
+    public TextMeshPro displayText;
     void Start()
     {
-        
+        //healthText = TextMeshProUGUI.FindObjectOfType
     }
 
     // Update is called once per frame
     void Update()
     {
+        displayText.text = health.ToString();
+
+        checkHealthValue();
         Die();
 
-        // ≤‚ ‘”√
         if (isStoneExisted)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 health = health * health;
+                consumeSquareStone();
             }
         }
     }
+    void checkHealthValue(){
+        healthText = GameObject.Find("byteValue").GetComponent<TextMeshProUGUI>();
+        healthText.text = "Current Bytes: " + health + "/99";
+    }
+
     private void hugByteNPC(int byteValue)
     {
         health += byteValue;
@@ -35,11 +48,13 @@ public class player : MonoBehaviour
     private void pickSquareStone()
     {
         isStoneExisted = true;
+        playerStatement("pickSquareStone");
     }
 
     private void consumeSquareStone()
     {
         isStoneExisted = false;
+        playerStatement("consumeSquareStone");
     }
 
     private void throughRootGate()
@@ -90,6 +105,12 @@ public class player : MonoBehaviour
             case "collection":
                 Debug.Log("collection!");
                 break;
+            case "consumeSquareStone":
+                healthImage.color = new Color32(255,255,255,100);
+                break;
+            case "pickSquareStone":
+                healthImage.color = new Color32(255,255,255,255);
+                break;  
         }
     }
 
