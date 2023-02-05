@@ -72,7 +72,7 @@ public class DialogSys : MonoBehaviour
         switch(textList[index]){
             case "Player":
                 faceImage.sprite =  face01;
-                faceImage.transform.position = new Vector3(-7,-3,0);
+                faceImage.transform.position = new Vector3(-6.5f,-3,0);
                 index++;
                 break;
             case "Square":
@@ -95,19 +95,5 @@ public class DialogSys : MonoBehaviour
         textFinished = true;
         index++;
     }
-
-    IEnumerator MoveTo(Transform mover, Vector3 destination, float speed) {
-    // This looks unsafe, but Unity uses
-    // en epsilon when comparing vectors.
-    while(mover.position != destination) {
-         mover.position = Vector3.MoveTowards(
-             mover.position,
-             destination,
-             speed * Time.deltaTime);
-         // Wait a frame and move again.
-         yield return null;
-    }
-}
-
 }
 
