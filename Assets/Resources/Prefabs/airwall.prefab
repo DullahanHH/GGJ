@@ -72,4 +72,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallPrefab: {fileID: 2605794160402215830, guid: 5a3adff7c2e22684f8ba78e988933936, type: 3}
-  smallDoorPos: {x: -0.501, y: 1.492, z: 0}
+  newWallPos: {x: 1.49, y: 1.54, z: 0}
